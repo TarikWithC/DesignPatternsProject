@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tarik\\Source\\Repos\\TarikWithC\\DesignPatterns\\GitTestSolution\\GitTestSolution.csproj",
+      "projectUniqueName": "C:\\Users\\tarik\\Desktop\\GitRepos\\DesignPatterns\\GitTestSolution\\GitTestSolution.csproj",
       "projectName": "GitTestSolution",
-      "projectPath": "C:\\Users\\tarik\\Source\\Repos\\TarikWithC\\DesignPatterns\\GitTestSolution\\GitTestSolution.csproj",
+      "projectPath": "C:\\Users\\tarik\\Desktop\\GitRepos\\DesignPatterns\\GitTestSolution\\GitTestSolution.csproj",
       "packagesPath": "C:\\Users\\tarik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tarik\\Source\\Repos\\TarikWithC\\DesignPatterns\\GitTestSolution\\obj\\",
+      "outputPath": "C:\\Users\\tarik\\Desktop\\GitRepos\\DesignPatterns\\GitTestSolution\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tarik\\AppData\\Roaming\\NuGet\\NuGet.Config",
