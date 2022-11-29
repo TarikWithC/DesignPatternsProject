@@ -55,7 +55,7 @@ namespace CreationalPatterns.Singleton
             }
 
             Console.WriteLine(isTestPassed
-                ? SingletonConsoleMessages.TestSucceded
+                ? SingletonConsoleMessages.TestSucceeded
                 : SingletonConsoleMessages.TestFailed);
         }
 
@@ -64,7 +64,7 @@ namespace CreationalPatterns.Singleton
             var firstObject = Singleton.GetObject();
             var secondObject = Singleton.GetObject();
             if(firstObject == secondObject)
-                Console.WriteLine(SingletonConsoleMessages.TestSucceded);
+                Console.WriteLine(SingletonConsoleMessages.TestSucceeded);
             else
                 Console.WriteLine(SingletonConsoleMessages.TestFailed);
         }
