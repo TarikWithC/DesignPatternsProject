@@ -4,22 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DesignPatterns.Core;
+using DesignPatterns.Patterns.CreationalPatterns.Singleton;
 
 namespace CreationalPatterns.Singleton
 {
     public class SingletonTest: PatternTestBase
     {
+
         public SingletonTest()
         {
-            Console.WriteLine(CtorMessage);
-
-            var input = ConsoleExtension.ReadStringFromConsole();
-            TestPicker(input);
+            Test();
         }
 
-
-        private void TestPicker(string input)
+        private void Test()
         {
+            Console.WriteLine(SingletonConsoleMessages.InformationMessage);
+            var input = ConsoleExtension.ReadStringFromConsole();
             switch (input)
             {
                 case "0":
@@ -31,35 +31,44 @@ namespace CreationalPatterns.Singleton
                     CheckIfObjectsAreSame();
                     break;
                 default:
-                    Console.WriteLine("Test couldn't be found. Please be sure that your input is valid.");
-                    TestPicker(input);
+                    Console.WriteLine(SingletonConsoleMessages.TestNotFound);
+                    Test();
                     break;
             }
         }
 
-        public void InitializeSingletonObjects()
+        private static void InitializeSingletonObjects()
         {
-            for (var i = 0; i < 10; i++)
+            var isTestPassed = true;
+            Console.WriteLine(SingletonConsoleMessages.CountQuestion);
+
+            var objectCountToGenerate = ConsoleExtension.ReadIntegerFromConsole();
+            var previousObjectName = Singleton.GetObject().GetName();
+            for (var i = 0; i < objectCountToGenerate; i++)
             {
-                var obj = Singleton.GetObject();
-                Console.WriteLine(obj.GetName());
-            } 
+                var currentObjectName = Singleton.GetObject().GetName();
+                if (previousObjectName != currentObjectName)
+                    isTestPassed = false;
+                
+                previousObjectName = currentObjectName;
+                Console.WriteLine(currentObjectName);
+            }
+
+            Console.WriteLine(isTestPassed
+                ? SingletonConsoleMessages.TestSucceded
+                : SingletonConsoleMessages.TestFailed);
         }
 
-        public void CheckIfObjectsAreSame()
+        private static void CheckIfObjectsAreSame()
         {
             var firstObject = Singleton.GetObject();
             var secondObject = Singleton.GetObject();
             if(firstObject == secondObject)
-                Console.WriteLine("Two objects are the same, test passed.");
+                Console.WriteLine(SingletonConsoleMessages.TestSucceded);
             else
-                Console.WriteLine("Two objects are different, test failed.");
+                Console.WriteLine(SingletonConsoleMessages.TestFailed);
         }
 
 
-        private const string CtorMessage = "There are '2' tests for Basic Singleton Design Pattern\n" +
-                                          "1: Initializes multiple singleton objects with serial numbers.\n" +
-                                          "2: Initializes two singleton objects and checks if they are really same objects.\n" +
-                                          "Please press 1 or 2 two start testing this design pattern, press 0 to exit this menu.";
     }
 }
