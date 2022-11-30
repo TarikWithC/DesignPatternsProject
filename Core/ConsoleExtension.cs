@@ -1,5 +1,5 @@
 ﻿
-namespace DesignPatterns.Core
+namespace Core
 {
     public static class ConsoleExtension
     {

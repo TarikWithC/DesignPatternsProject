@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace DesignPatterns.Patterns.CreationalPatterns.Singleton
 {
     internal class SingletonConsoleMessages
@@ -15,7 +10,7 @@ namespace DesignPatterns.Patterns.CreationalPatterns.Singleton
 
         public const string CountQuestion = "How many objects do you want to create?";
 
-        public const string TestSucceded = "All test instances are the same. Test succeeded.";
+        public const string TestSucceeded = "All test instances are the same. Test succeeded.";
 
         public const string TestFailed = "Some test instances are different. Test failed.";
 

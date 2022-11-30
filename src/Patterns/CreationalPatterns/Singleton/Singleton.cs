@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CreationalPatterns.Singleton
+﻿
+namespace DesignPatterns.Patterns.CreationalPatterns.Singleton
 {
     public class Singleton
     {
         private static readonly Singleton SingletonObject = new();
-        private static int _objectNumber = 0;
-        private static string? _objectName;
+        private readonly int _objectNumber;
+        private readonly string _objectName;
 
         private Singleton()
         {
             _objectNumber++;
-            _objectName = $"{_objectNumber}. Singleton Object Initialized";
+            _objectName = $"Singleton Object Initialized. Instance Number: {_objectNumber}. ";
         }
         public static Singleton GetObject()
         {
