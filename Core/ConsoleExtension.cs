@@ -10,7 +10,7 @@ namespace Core
                 var input = Console.In.ReadLine();
                 if (string.IsNullOrEmpty(input))
                 {
-                    Console.WriteLine("Please enter a valid value.");
+                    Console.WriteLine("Please enter a value.");
                     ReadStringFromConsole();
                 }
                 return input;
@@ -31,7 +31,8 @@ namespace Core
             }
             catch (FormatException)
             {
-                throw new FormatException($"Please enter a valid number.");
+                Console.WriteLine("Please enter a number.");
+                return ReadIntegerFromConsole();
             }
             catch (Exception ex)
             {

@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\DesignPatterns.csproj" />
+    <ProjectReference Include="..\DesignPatterns\DesignPatterns.csproj" />
   </ItemGroup>
 
 </Project>

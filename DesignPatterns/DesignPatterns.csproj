@@ -8,9 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Patterns\BehavioralPatterns\" />
-    <Folder Include="Patterns\OtherPatterns\" />
-    <Folder Include="Patterns\StructuralPatterns\" />
+    <Folder Include="BehavioralPatterns\" />
+    <Folder Include="CreationalPatterns\LazySingleton\" />
+    <Folder Include="OtherPatterns\" />
+    <Folder Include="StructuralPatterns\" />
   </ItemGroup>
 
   <ItemGroup>
