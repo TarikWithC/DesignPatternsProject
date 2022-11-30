@@ -11,15 +11,15 @@ namespace DesignPatterns.Patterns.CreationalPatterns.Singleton
         public void Test()
         {
             Console.WriteLine(SingletonConsoleMessages.InformationMessage);
-            var input = ConsoleExtension.ReadStringFromConsole();
+            var input = ConsoleExtension.ReadIntegerFromConsole();
             switch (input)
             {
-                case "0":
+                case 0:
                     break;
-                case "1":
+                case 1:
                     InitializeSingletonObjects();
                     break;
-                case "2":
+                case 2:
                     CheckIfObjectsAreSame();
                     break;
                 default:
@@ -36,14 +36,12 @@ namespace DesignPatterns.Patterns.CreationalPatterns.Singleton
 
             var objectCountToGenerate = ConsoleExtension.ReadIntegerFromConsole();
 
-            var previousObject = Singleton.GetObject();
-            var previousObjectName = previousObject.GetName();
+            var previousObjectName = Singleton.GetObject().GetName();
             for (var i = 0; i < objectCountToGenerate; i++)
             {
                 var currentObjectName = Singleton.GetObject().GetName();
                 if (previousObjectName != currentObjectName)
                     isTestPassed = false;
-                
                 previousObjectName = currentObjectName;
                 Console.WriteLine(currentObjectName);
             }

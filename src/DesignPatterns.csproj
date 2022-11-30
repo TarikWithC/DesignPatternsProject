@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Folder Include="Patterns\BehavioralPatterns\" />
+    <Folder Include="Patterns\CreationalPatterns\LazySingleton\" />
     <Folder Include="Patterns\OtherPatterns\" />
     <Folder Include="Patterns\StructuralPatterns\" />
   </ItemGroup>
