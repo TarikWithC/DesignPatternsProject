@@ -1,6 +1,6 @@
 ﻿using Core;
 
-namespace DesignPatterns.Patterns.CreationalPatterns.Singleton
+namespace DesignPatterns.CreationalPatterns.Singleton
 {
     public class SingletonTest: ISingletonTest
     {

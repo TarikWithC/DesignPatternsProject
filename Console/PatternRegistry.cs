@@ -1,5 +1,5 @@
-﻿using DesignPatterns.Patterns;
-using DesignPatterns.Patterns.CreationalPatterns.Singleton;
+﻿using DesignPatterns;
+using DesignPatterns.CreationalPatterns.Singleton;
 
 namespace ConsoleApp
 {

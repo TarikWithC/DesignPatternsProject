@@ -1,6 +1,6 @@
 ﻿
 
-namespace DesignPatterns.Patterns
+namespace DesignPatterns
 {
     public interface IPatternTester
     {

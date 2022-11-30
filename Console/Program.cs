@@ -1,5 +1,5 @@
 ﻿using Core;
-using DesignPatterns.Patterns;
+using DesignPatterns;
 
 namespace ConsoleApp;
 internal class Program

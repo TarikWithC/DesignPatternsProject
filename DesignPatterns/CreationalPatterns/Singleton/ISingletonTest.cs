@@ -1,6 +1,6 @@
 ﻿
 
-namespace DesignPatterns.Patterns.CreationalPatterns.Singleton
+namespace DesignPatterns.CreationalPatterns.Singleton
 {
     public interface ISingletonTest: IPatternTester
     {
