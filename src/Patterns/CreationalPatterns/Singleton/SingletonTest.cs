@@ -1,22 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DesignPatterns.Core;
-using DesignPatterns.Patterns.CreationalPatterns.Singleton;
+﻿using Core;
 
-namespace CreationalPatterns.Singleton
+namespace DesignPatterns.Patterns.CreationalPatterns.Singleton
 {
-    public class SingletonTest: PatternTestBase
+    public class SingletonTest: ISingletonTest
     {
-
         public SingletonTest()
         {
-            Test();
         }
 
-        private void Test()
+        public void Test()
         {
             Console.WriteLine(SingletonConsoleMessages.InformationMessage);
             var input = ConsoleExtension.ReadStringFromConsole();
@@ -43,7 +35,9 @@ namespace CreationalPatterns.Singleton
             Console.WriteLine(SingletonConsoleMessages.CountQuestion);
 
             var objectCountToGenerate = ConsoleExtension.ReadIntegerFromConsole();
-            var previousObjectName = Singleton.GetObject().GetName();
+
+            var previousObject = Singleton.GetObject();
+            var previousObjectName = previousObject.GetName();
             for (var i = 0; i < objectCountToGenerate; i++)
             {
                 var currentObjectName = Singleton.GetObject().GetName();
