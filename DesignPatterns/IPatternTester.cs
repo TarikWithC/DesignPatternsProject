@@ -1,5 +1,4 @@
 ﻿
-
 namespace DesignPatterns
 {
     public interface IPatternTester
