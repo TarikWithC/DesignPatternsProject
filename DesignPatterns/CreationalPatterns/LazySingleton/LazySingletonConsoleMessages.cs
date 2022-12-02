@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DesignPatterns.Constants;
-
+﻿
 namespace DesignPatterns.CreationalPatterns.LazySingleton
 {
     internal class LazySingletonConsoleMessages

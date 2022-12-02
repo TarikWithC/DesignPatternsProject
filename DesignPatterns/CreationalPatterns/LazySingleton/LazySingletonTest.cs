@@ -1,6 +1,4 @@
-﻿
-using Core;
-using DesignPatterns.CreationalPatterns.Singleton;
+﻿using Core;
 
 namespace DesignPatterns.CreationalPatterns.LazySingleton
 {
