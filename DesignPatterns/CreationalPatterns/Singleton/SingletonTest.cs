@@ -10,7 +10,7 @@ namespace DesignPatterns.CreationalPatterns.Singleton
 
         public void Test()
         {
-            Console.WriteLine(SingletonConsoleMessages.InformationMessage);
+            Console.WriteLine(SingletonConsoleMessages.Information);
             var input = ConsoleExtension.ReadIntegerFromConsole();
             switch (input)
             {
