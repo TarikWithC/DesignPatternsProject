@@ -3,7 +3,7 @@ namespace DesignPatterns.CreationalPatterns.ThreadSafeLazySingleton
 {
     public sealed class ThreadSafeLazySingleton
     {
-        private static ThreadSafeLazySingleton Instance;
+        private static ThreadSafeLazySingleton? Instance;
         private static readonly object Padlock = new ();
         private readonly int _objectNumber;
         private readonly string _objectName;

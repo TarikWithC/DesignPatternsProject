@@ -50,7 +50,7 @@ namespace DesignPatterns.CreationalPatterns.LazySingleton
             {
                 var thread = new Thread(CreateAndCheckInstance);
                 thread.Start();
-                Console.WriteLine($"\nThread Name: {thread.ManagedThreadId}");
+                Console.WriteLine($"\nThread Name: {thread.ManagedThreadId} started.");
             }
         }
 
