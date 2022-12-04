@@ -23,7 +23,7 @@ internal class Program
 
     private static void Run()
     {
-        Console.WriteLine(ConsoleMenuMessages.MainInfo);
+        Console.WriteLine(ConsoleMenuMessages.MainInfo + TestRegistry.PatternNames);
         var choice = ConsoleExtension.ReadIntegerFromConsole();
 
         if (choice == 0)
