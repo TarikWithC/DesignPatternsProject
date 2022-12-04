@@ -1,22 +1,24 @@
-﻿using System.Text;
-using Core.Extensions;
+﻿using Core.Extensions;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Constants;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Entities;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Interfaces;
 
-namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Initiliazers
+namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers
 {
     public class SingletonExecutor: IPatternExecutor
     {
+        #region Class/Object Information
         private const string PatternName = "Singleton";
         public string GetPatternName()
         {
             return PatternName;
         }
+        #endregion
 
-        private SingletonTest singletonTester = new SingletonTest();
-        private static Dictionary<int, ISingleton> SingletonDictionary = new();
-        private static int serialNumber;
+
+        private readonly SingletonTest _singletonTester = new ();
+        private static readonly Dictionary<int, ISingleton> SingletonDictionary = new();
+        private static int _serialNumber;
 
         public SingletonExecutor()
         {
@@ -25,11 +27,11 @@ namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Initiliazers
 
         public static void RegisterPatterns()
         {
-            SingletonDictionary.Add(++serialNumber, Singleton.Instance);
-            SingletonDictionary.Add(++serialNumber, LazySingleton.Instance);
-            SingletonDictionary.Add(++serialNumber, ThreadSafeLazySingleton.Instance);
-            SingletonDictionary.Add(++serialNumber, NestedLazySingleton.Instance);
-            SingletonDictionary.Add(++serialNumber, DotNetLazySingleton.Instance);
+            SingletonDictionary.Add(++_serialNumber, Singleton.Instance);
+            SingletonDictionary.Add(++_serialNumber, LazySingleton.Instance);
+            SingletonDictionary.Add(++_serialNumber, ThreadSafeLazySingleton.Instance);
+            SingletonDictionary.Add(++_serialNumber, NestedLazySingleton.Instance);
+            SingletonDictionary.Add(++_serialNumber, DotNetLazySingleton.Instance);
         }
 
         public void PrintPatternNames()
@@ -44,13 +46,12 @@ namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Initiliazers
             Console.WriteLine(SingletonConsoleMessages.MainInformation);
             PrintPatternNames();
             var choice = ConsoleExtension.ReadIntegerFromConsole();
-            Console.ForegroundColor = ConsoleColor.Cyan;
             if (choice == 0)
                 return;
             if (SingletonDictionary.ContainsKey(choice))
             {
                 SingletonDictionary.TryGetValue(choice, out ISingleton singletonObject);
-                singletonTester.Test(singletonObject);
+                _singletonTester.Test(singletonObject);
             }
             else
             {

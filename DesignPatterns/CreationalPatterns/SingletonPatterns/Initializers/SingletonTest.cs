@@ -2,7 +2,7 @@
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Constants;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Interfaces;
 
-namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Initiliazers
+namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers
 {
     public sealed class SingletonTest
     {
@@ -44,7 +44,6 @@ namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Initiliazers
         {
             Console.WriteLine(SingletonConsoleMessages.CountQuestion);
             var objectCountToGenerate = ConsoleExtension.ReadIntegerFromConsole();
-            Console.ForegroundColor = ConsoleColor.Red;
             for (var i = 0; i < objectCountToGenerate; i++)
             {
                 var thread = new Thread(() => CreateAndCheckInstance(singletonObject));

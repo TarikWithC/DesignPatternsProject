@@ -23,23 +23,24 @@ internal class Program
 
     private static void Run()
     {
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.WriteLine(ConsoleMenuMessages.MainInfo + PatternTestRegistry.PatternNames);
         Console.ForegroundColor = ConsoleColor.DarkCyan;
+        Console.WriteLine(ConsoleMenuMessages.MainInfo + PatternTestRegistry.PatternNames);
         var choice = ConsoleExtension.ReadIntegerFromConsole();
 
+        var executors = PatternTestRegistry.Executors;
         if (choice == 0)
             _flag = false;
-
-        var executors = PatternTestRegistry.Executors;
-        if (executors.ContainsKey(choice))
+        else if (executors.ContainsKey(choice))
         {
             executors.TryGetValue(choice, out IPatternExecutor? executor);
             executor?.Execute();
         }
         else
         {
+            var currentColor = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(ConsoleMenuMessages.InvalidValue);
+            Console.ForegroundColor = currentColor;
         }
     }
 }

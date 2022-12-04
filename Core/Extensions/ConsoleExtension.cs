@@ -8,12 +8,15 @@ namespace Core.Extensions
             try
             {
                 var input = Console.In.ReadLine();
-                if (string.IsNullOrEmpty(input))
+                if (input != null)
                 {
-                    Console.WriteLine("Please enter a value.");
-                    ReadStringFromConsole();
+                    return input;
                 }
-                return input;
+                var currentColor = Console.ForegroundColor;
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("Please enter a value.");
+                Console.ForegroundColor = currentColor;
+                return ReadStringFromConsole();
             }
             catch (Exception ex)
             {
@@ -31,7 +34,10 @@ namespace Core.Extensions
             }
             catch (FormatException)
             {
+                var currentColor = Console.ForegroundColor;
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.WriteLine("Please enter a number.");
+                Console.ForegroundColor = currentColor;
                 return ReadIntegerFromConsole();
             }
             catch (Exception ex)
