@@ -2,7 +2,7 @@
 
 namespace DesignPatterns.CreationalPatterns.LazySingleton
 {
-    public sealed class LazySingletonTest: ILazySingleton
+    public sealed class LazySingletonTest: IPatternTester
     {
         private const string PatternName = "Lazy Singleton";
         public string GetPatternName()
