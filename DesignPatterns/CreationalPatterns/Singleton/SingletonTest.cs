@@ -2,15 +2,15 @@
 
 namespace DesignPatterns.CreationalPatterns.Singleton
 {
-    public class SingletonTest: ISingletonTest
+    public sealed class SingletonTest: ISingletonTest
     {
-        private static bool _isTestPassed = true;
         private const string PatternName = "Singleton";
-
         public string GetPatternName()
         {
             return PatternName;
         }
+
+        private static bool _isTestPassed = true;
 
         public void Test()
         {

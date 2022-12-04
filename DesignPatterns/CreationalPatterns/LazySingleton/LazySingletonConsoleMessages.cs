@@ -3,7 +3,7 @@ namespace DesignPatterns.CreationalPatterns.LazySingleton
 {
     internal class LazySingletonConsoleMessages
     {
-        internal const string? Information = "Welcome to lazy singleton.\n" +
+        internal const string? Information = "Welcome to Lazy Singleton Design Pattern.\n" +
                                              "0: Quit this menu.\n" +
                                              "1: Run test.";
         internal const string CountQuestion = "How many objects do you want to create?";
