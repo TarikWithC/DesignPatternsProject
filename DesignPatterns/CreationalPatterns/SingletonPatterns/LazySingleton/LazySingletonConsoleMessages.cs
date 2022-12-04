@@ -1,5 +1,5 @@
 ﻿
-namespace DesignPatterns.CreationalPatterns.LazySingleton
+namespace DesignPatterns.CreationalPatterns.SingletonPatterns.LazySingleton
 {
     internal class LazySingletonConsoleMessages
     {

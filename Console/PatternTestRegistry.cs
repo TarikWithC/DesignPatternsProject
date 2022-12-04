@@ -1,9 +1,9 @@
 ﻿using System.Text;
 using DesignPatterns;
-using DesignPatterns.CreationalPatterns.LazySingleton;
-using DesignPatterns.CreationalPatterns.NestedLazySingleton;
-using DesignPatterns.CreationalPatterns.Singleton;
-using DesignPatterns.CreationalPatterns.ThreadSafeLazySingleton;
+using DesignPatterns.CreationalPatterns.SingletonPatterns.LazySingleton;
+using DesignPatterns.CreationalPatterns.SingletonPatterns.NestedLazySingleton;
+using DesignPatterns.CreationalPatterns.SingletonPatterns.Singleton;
+using DesignPatterns.CreationalPatterns.SingletonPatterns.ThreadSafeLazySingleton;
 
 namespace ConsoleApp
 {

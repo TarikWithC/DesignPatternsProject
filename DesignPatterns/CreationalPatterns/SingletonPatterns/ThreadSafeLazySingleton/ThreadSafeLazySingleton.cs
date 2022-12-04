@@ -1,5 +1,5 @@
 ﻿
-namespace DesignPatterns.CreationalPatterns.ThreadSafeLazySingleton
+namespace DesignPatterns.CreationalPatterns.SingletonPatterns.ThreadSafeLazySingleton
 {
     public sealed class ThreadSafeLazySingleton
     {

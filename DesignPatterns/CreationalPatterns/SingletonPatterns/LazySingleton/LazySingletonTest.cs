@@ -1,6 +1,6 @@
 ﻿using Core;
 
-namespace DesignPatterns.CreationalPatterns.LazySingleton
+namespace DesignPatterns.CreationalPatterns.SingletonPatterns.LazySingleton
 {
     public sealed class LazySingletonTest: IPatternTester
     {

@@ -1,5 +1,5 @@
 ﻿
-namespace DesignPatterns.CreationalPatterns.NestedLazySingleton
+namespace DesignPatterns.CreationalPatterns.SingletonPatterns.NestedLazySingleton
 {
     public sealed class NestedLazySingleton
     {
