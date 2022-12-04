@@ -3,7 +3,8 @@ namespace DesignPatterns.CreationalPatterns.ThreadSafeLazySingleton
 {
     public sealed class ThreadSafeLazySingleton
     {
-        private static ThreadSafeLazySingleton ThreadSafeLazySingletonObject;
+        private static ThreadSafeLazySingleton Instance;
+        private static readonly object Padlock = new ();
         private readonly int _objectNumber;
         private readonly string _objectName;
 
@@ -13,13 +14,21 @@ namespace DesignPatterns.CreationalPatterns.ThreadSafeLazySingleton
             _objectName = $"Instance SN: {_objectNumber}.";
         }
 
-        // This type of using lazy initializer is not thread safe.
-        // You can see abnormalities in console output. 
+        // Double check locking for being thread safe and higher performance.
         public static ThreadSafeLazySingleton GetObject()
         {
-            if (ThreadSafeLazySingletonObject == null)
-                ThreadSafeLazySingletonObject = new ThreadSafeLazySingleton();
-            return ThreadSafeLazySingletonObject;
+            // Using "double check" to improve performance via escaping unnecessarily locked null checks.
+            if (Instance == null)
+            {
+                // Using "locking" to be thread safe.
+                lock (Padlock)
+                {
+                    if (Instance == null)
+                        Instance = new ThreadSafeLazySingleton();
+                }
+            }
+            
+            return Instance;
         }
 
         public string GetName()

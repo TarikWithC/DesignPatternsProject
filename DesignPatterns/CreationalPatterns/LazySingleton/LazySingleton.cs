@@ -14,7 +14,7 @@ namespace DesignPatterns.CreationalPatterns.LazySingleton
         }
 
         // This type of using lazy initializer is not thread safe.
-        // You can see abnormalities in console output. 
+        // You can see abnormalities in console output. (Sometimes)
         public static LazySingleton GetObject()
         {
             if (LazySingletonObject == null)

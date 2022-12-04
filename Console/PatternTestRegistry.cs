@@ -2,6 +2,7 @@
 using DesignPatterns;
 using DesignPatterns.CreationalPatterns.LazySingleton;
 using DesignPatterns.CreationalPatterns.Singleton;
+using DesignPatterns.CreationalPatterns.ThreadSafeLazySingleton;
 
 namespace ConsoleApp
 {
@@ -15,7 +16,7 @@ namespace ConsoleApp
         {
             Tests.TryAdd(++_serialNumber, new SingletonTest());
             Tests.TryAdd(++_serialNumber, new LazySingletonTest());
-            Tests.TryAdd(++_serialNumber, new LazySingletonTest());
+            Tests.TryAdd(++_serialNumber, new ThreadSafeLazySingletonTest());
             SavePatternNames();
         }
 
