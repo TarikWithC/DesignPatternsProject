@@ -1,8 +1,8 @@
 ﻿using Core;
 
-namespace DesignPatterns.CreationalPatterns.LazySingleton
+namespace DesignPatterns.CreationalPatterns.ThreadSafeLazySingleton
 {
-    public sealed class LazySingletonTest: IPatternTester
+    public sealed class ThreadSafeLazySingletonTest: IPatternTester
     {
         private const string PatternName = "Lazy Singleton";
         public string GetPatternName()
@@ -15,7 +15,7 @@ namespace DesignPatterns.CreationalPatterns.LazySingleton
 
         public void Test()
         {
-            Console.WriteLine(LazySingletonConsoleMessages.Information);
+            Console.WriteLine(ThreadSafeLazySingletonMessages.Information);
             var input = ConsoleExtension.ReadIntegerFromConsole();
             switch (input)
             {
@@ -26,7 +26,7 @@ namespace DesignPatterns.CreationalPatterns.LazySingleton
                     PrintResults();
                     break;
                 default:
-                    Console.WriteLine(LazySingletonConsoleMessages.CommandNotFound);
+                    Console.WriteLine(ThreadSafeLazySingletonMessages.CommandNotFound);
                     Test();
                     break;
             }
@@ -34,7 +34,7 @@ namespace DesignPatterns.CreationalPatterns.LazySingleton
 
         private static void CreateAndCheckInstance()
         {
-            var testInstanceName = LazySingleton.GetObject().GetName();
+            var testInstanceName = ThreadSafeLazySingleton.GetObject().GetName();
             Console.WriteLine(testInstanceName);
             if (!string.Equals(testInstanceName, ExpectedInstanceName))
             {
@@ -44,7 +44,7 @@ namespace DesignPatterns.CreationalPatterns.LazySingleton
 
         private static void StartThreads()
         {
-            Console.WriteLine(LazySingletonConsoleMessages.CountQuestion);
+            Console.WriteLine(ThreadSafeLazySingletonMessages.CountQuestion);
             var objectCountToGenerate = ConsoleExtension.ReadIntegerFromConsole();
             for (var i = 0; i < objectCountToGenerate; i++)
             {
@@ -57,8 +57,8 @@ namespace DesignPatterns.CreationalPatterns.LazySingleton
         private static void PrintResults()
         {
             Console.WriteLine(_isTestPassed
-                ? LazySingletonConsoleMessages.TestSucceeded
-                : LazySingletonConsoleMessages.TestFailed);
+                ? ThreadSafeLazySingletonMessages.TestSucceeded
+                : ThreadSafeLazySingletonMessages.TestFailed);
         }
         
     }

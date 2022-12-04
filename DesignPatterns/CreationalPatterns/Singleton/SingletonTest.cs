@@ -2,7 +2,7 @@
 
 namespace DesignPatterns.CreationalPatterns.Singleton
 {
-    public sealed class SingletonTest: ISingletonTest
+    public sealed class SingletonTest: IPatternTester
     {
         private const string PatternName = "Singleton";
         public string GetPatternName()
