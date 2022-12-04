@@ -1,9 +1,9 @@
 ﻿
-namespace DesignPatterns.CreationalPatterns.ThreadSafeLazySingleton
+namespace DesignPatterns.CreationalPatterns.SingletonPatterns.NestedLazySingleton
 {
-    internal class ThreadSafeLazySingletonMessages
+    internal class NestedLazySingletonConsoleMessages
     {
-        internal const string? Information = "Welcome to Thread Safe Lazy Singleton Design Pattern.\n" +
+        internal const string? Information = "Welcome to Nested Lazy Singleton Design Pattern.\n" +
                                              "0: Quit this menu.\n" +
                                              "1: Run test.";
         internal const string CountQuestion = "How many objects do you want to create?";

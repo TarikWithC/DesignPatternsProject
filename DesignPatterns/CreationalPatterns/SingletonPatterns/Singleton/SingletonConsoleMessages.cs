@@ -1,5 +1,5 @@
 ﻿
-namespace DesignPatterns.CreationalPatterns.Singleton
+namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Singleton
 {
     internal class SingletonConsoleMessages
     {

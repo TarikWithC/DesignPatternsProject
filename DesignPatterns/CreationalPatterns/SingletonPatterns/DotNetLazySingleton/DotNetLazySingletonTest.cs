@@ -1,10 +1,10 @@
 ﻿using Core;
 
-namespace DesignPatterns.CreationalPatterns.NestedLazySingleton
+namespace DesignPatterns.CreationalPatterns.SingletonPatterns.DotNetLazySingleton
 {
-    public sealed class NestedLazySingletonTest: IPatternTester
+    public sealed class DotNetLazySingletonTest: IPatternTester
     {
-        private const string PatternName = "Nested Lazy Singleton";
+        private const string PatternName = "DotNet Lazy Singleton";
         public string GetPatternName()
         {
             return PatternName;
@@ -15,7 +15,7 @@ namespace DesignPatterns.CreationalPatterns.NestedLazySingleton
 
         public void Test()
         {
-            Console.WriteLine(NestedLazySingletonConsoleMessages.Information);
+            Console.WriteLine(DotNetLazySingletonConsoleMessages.Information);
             var input = ConsoleExtension.ReadIntegerFromConsole();
             switch (input)
             {
@@ -26,7 +26,7 @@ namespace DesignPatterns.CreationalPatterns.NestedLazySingleton
                     PrintResults();
                     break;
                 default:
-                    Console.WriteLine(NestedLazySingletonConsoleMessages.CommandNotFound);
+                    Console.WriteLine(DotNetLazySingletonConsoleMessages.CommandNotFound);
                     Test();
                     break;
             }
@@ -34,7 +34,7 @@ namespace DesignPatterns.CreationalPatterns.NestedLazySingleton
 
         private static void CreateAndCheckInstance()
         {
-            var testInstanceName = NestedLazySingleton.Instance.GetName();
+            var testInstanceName = DotNetLazySingleton.GetObject().GetName();
             Console.WriteLine(testInstanceName);
             if (!string.Equals(testInstanceName, ExpectedInstanceName))
             {
@@ -44,7 +44,7 @@ namespace DesignPatterns.CreationalPatterns.NestedLazySingleton
 
         private static void StartThreads()
         {
-            Console.WriteLine(NestedLazySingletonConsoleMessages.CountQuestion);
+            Console.WriteLine(DotNetLazySingletonConsoleMessages.CountQuestion);
             var objectCountToGenerate = ConsoleExtension.ReadIntegerFromConsole();
             for (var i = 0; i < objectCountToGenerate; i++)
             {
@@ -57,8 +57,8 @@ namespace DesignPatterns.CreationalPatterns.NestedLazySingleton
         private static void PrintResults()
         {
             Console.WriteLine(_isTestPassed
-                ? NestedLazySingletonConsoleMessages.TestSucceeded
-                : NestedLazySingletonConsoleMessages.TestFailed);
+                ? DotNetLazySingletonConsoleMessages.TestSucceeded
+                : DotNetLazySingletonConsoleMessages.TestFailed);
         }
         
     }

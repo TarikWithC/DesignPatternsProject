@@ -1,9 +1,9 @@
 ﻿
-namespace DesignPatterns.CreationalPatterns.NestedLazySingleton
+namespace DesignPatterns.CreationalPatterns.SingletonPatterns.LazySingleton
 {
-    internal class NestedLazySingletonConsoleMessages
+    internal class LazySingletonConsoleMessages
     {
-        internal const string? Information = "Welcome to Nested Lazy Singleton Design Pattern.\n" +
+        internal const string? Information = "Welcome to Lazy Singleton Design Pattern.\n" +
                                              "0: Quit this menu.\n" +
                                              "1: Run test.";
         internal const string CountQuestion = "How many objects do you want to create?";
