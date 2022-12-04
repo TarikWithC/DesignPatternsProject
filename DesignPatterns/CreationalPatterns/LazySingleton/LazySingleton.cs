@@ -3,7 +3,7 @@ namespace DesignPatterns.CreationalPatterns.LazySingleton
 {
     public sealed class LazySingleton
     {
-        private static LazySingleton LazySingletonObject;
+        private static LazySingleton? Instance;
         private readonly int _objectNumber;
         private readonly string _objectName;
 
@@ -17,9 +17,9 @@ namespace DesignPatterns.CreationalPatterns.LazySingleton
         // You can see abnormalities in console output. (Sometimes)
         public static LazySingleton GetObject()
         {
-            if (LazySingletonObject == null)
-                LazySingletonObject = new LazySingleton();
-            return LazySingletonObject;
+            if (Instance == null)
+                Instance = new LazySingleton();
+            return Instance;
         }
 
         public string GetName()
