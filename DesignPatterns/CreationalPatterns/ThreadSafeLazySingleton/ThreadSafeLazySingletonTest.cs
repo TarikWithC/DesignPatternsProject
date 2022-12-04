@@ -4,7 +4,7 @@ namespace DesignPatterns.CreationalPatterns.ThreadSafeLazySingleton
 {
     public sealed class ThreadSafeLazySingletonTest: IPatternTester
     {
-        private const string PatternName = "Lazy Singleton";
+        private const string PatternName = "Thread Safe Lazy Singleton";
         public string GetPatternName()
         {
             return PatternName;
