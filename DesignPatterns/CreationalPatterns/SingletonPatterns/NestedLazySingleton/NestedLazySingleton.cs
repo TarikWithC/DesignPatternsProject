@@ -15,10 +15,7 @@ namespace DesignPatterns.CreationalPatterns.SingletonPatterns.NestedLazySingleto
 
         private class Nested
         {
-            static Nested()
-            {
-            }
-
+            static Nested(){}
             internal static readonly NestedLazySingleton instance = new();
         }
 

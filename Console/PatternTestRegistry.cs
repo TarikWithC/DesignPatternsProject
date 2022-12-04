@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using DesignPatterns;
+using DesignPatterns.CreationalPatterns.SingletonPatterns.DotNetLazySingleton;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.LazySingleton;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.NestedLazySingleton;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Singleton;
@@ -19,6 +20,8 @@ namespace ConsoleApp
             Tests.TryAdd(++_serialNumber, new LazySingletonTest());
             Tests.TryAdd(++_serialNumber, new ThreadSafeLazySingletonTest());
             Tests.TryAdd(++_serialNumber, new NestedLazySingletonTest());
+            Tests.TryAdd(++_serialNumber, new DotNetLazySingletonTest());
+
             SavePatternNames();
         }
 
