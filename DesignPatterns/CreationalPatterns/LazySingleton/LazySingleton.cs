@@ -1,7 +1,7 @@
 ﻿
 namespace DesignPatterns.CreationalPatterns.LazySingleton
 {
-    public class LazySingleton
+    public sealed class LazySingleton
     {
         private static LazySingleton LazySingletonObject;
         private readonly int _objectNumber;
@@ -12,6 +12,9 @@ namespace DesignPatterns.CreationalPatterns.LazySingleton
             _objectNumber++;
             _objectName = $"Instance SN: {_objectNumber}.";
         }
+
+        // This type of using lazy initializer is not thread safe.
+        // You can see abnormalities in console output. 
         public static LazySingleton GetObject()
         {
             if (LazySingletonObject == null)

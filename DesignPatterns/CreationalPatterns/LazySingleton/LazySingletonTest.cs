@@ -2,16 +2,16 @@
 
 namespace DesignPatterns.CreationalPatterns.LazySingleton
 {
-    public class LazySingletonTest: ILazySingleton
+    public sealed class LazySingletonTest: ILazySingleton
     {
-        private static bool _isTestPassed = true;
         private const string PatternName = "Lazy Singleton";
-        private const string ExpectedInstanceName = "Instance SN: 1.";
-
         public string GetPatternName()
         {
             return PatternName;
         }
+
+        private static bool _isTestPassed = true;
+        private const string ExpectedInstanceName = "Instance SN: 1.";
 
         public void Test()
         {
@@ -32,7 +32,7 @@ namespace DesignPatterns.CreationalPatterns.LazySingleton
             }
         }
 
-        public static void CreateAndCheckInstance()
+        private static void CreateAndCheckInstance()
         {
             var testInstanceName = LazySingleton.GetObject().GetName();
             Console.WriteLine(testInstanceName);
@@ -42,7 +42,7 @@ namespace DesignPatterns.CreationalPatterns.LazySingleton
             }
         }
 
-        public static void StartThreads()
+        private static void StartThreads()
         {
             Console.WriteLine(LazySingletonConsoleMessages.CountQuestion);
             var objectCountToGenerate = ConsoleExtension.ReadIntegerFromConsole();
