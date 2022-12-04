@@ -1,7 +1,7 @@
 ﻿
 namespace DesignPatterns.CreationalPatterns.LazySingleton
 {
-    public interface ILazySingleton:IPatternTester
+    public interface ILazySingleton: IPatternTester
     {
     }
 }

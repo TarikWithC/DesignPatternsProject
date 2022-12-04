@@ -3,7 +3,7 @@ namespace DesignPatterns.CreationalPatterns.LazySingleton
 {
     public class LazySingleton
     {
-        private static LazySingleton LazySingletonObject = new();
+        private static LazySingleton LazySingletonObject;
         private readonly int _objectNumber;
         private readonly string _objectName;
 

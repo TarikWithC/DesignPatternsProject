@@ -6,6 +6,7 @@ namespace DesignPatterns.CreationalPatterns.LazySingleton
     {
         private static bool _isTestPassed = true;
         private const string PatternName = "Lazy Singleton";
+        private const string ExpectedInstanceName = "Instance SN: 1.";
 
         public string GetPatternName()
         {
@@ -21,7 +22,8 @@ namespace DesignPatterns.CreationalPatterns.LazySingleton
                 case 0:
                     break;
                 case 1:
-                    InitializeSingletonObjects();
+                    StartThreads();
+                    PrintResults();
                     break;
                 default:
                     Console.WriteLine(LazySingletonConsoleMessages.CommandNotFound);
@@ -29,33 +31,35 @@ namespace DesignPatterns.CreationalPatterns.LazySingleton
                     break;
             }
         }
-        
-        private static void InitializeSingletonObjects()
+
+        public static void CreateAndCheckInstance()
         {
-            
+            var testInstanceName = LazySingleton.GetObject().GetName();
+            Console.WriteLine(testInstanceName);
+            if (!string.Equals(testInstanceName, ExpectedInstanceName))
+            {
+                _isTestPassed = false;
+            }
+        }
+
+        public static void StartThreads()
+        {
             Console.WriteLine(LazySingletonConsoleMessages.CountQuestion);
             var objectCountToGenerate = ConsoleExtension.ReadIntegerFromConsole();
-            var previousObjectName = LazySingleton.GetObject().GetName();
             for (var i = 0; i < objectCountToGenerate; i++)
             {
-                InitializeThreads();
-                var currentObjectName = LazySingleton.GetObject().GetName();
-                if (previousObjectName != currentObjectName)
-                    _isTestPassed = false;
-                previousObjectName = currentObjectName;
-                Console.WriteLine(currentObjectName);
-                Thread.Sleep(0);
+                var thread = new Thread(CreateAndCheckInstance);
+                thread.Start();
+                Console.WriteLine($"\nThread Name: {thread.ManagedThreadId}");
             }
+        }
 
+        private static void PrintResults()
+        {
             Console.WriteLine(_isTestPassed
                 ? LazySingletonConsoleMessages.TestSucceeded
                 : LazySingletonConsoleMessages.TestFailed);
         }
-
-        public static void InitializeThreads()
-        {
-            var thread = new Thread(InitializeSingletonObjects);
-            Console.WriteLine($"\nThread Name: {thread.ManagedThreadId}");
-        }
+        
     }
 }
