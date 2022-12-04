@@ -5,13 +5,13 @@ using DesignPatterns.CreationalPatterns.SingletonPatterns.Initiliazers;
 
 namespace ConsoleApp
 {
-    public class PatternTestRegistry
+    public class ExecutorRegistry
     {
         private readonly int _serialNumber;
         public Dictionary<int, IPatternExecutor> Executors = new();
         public StringBuilder PatternNames = new();
 
-        public PatternTestRegistry()
+        public ExecutorRegistry()
         {
             Executors.TryAdd(++_serialNumber, new SingletonExecutor());
 

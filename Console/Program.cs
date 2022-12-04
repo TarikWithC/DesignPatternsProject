@@ -6,7 +6,7 @@ namespace ConsoleApp;
 internal class Program
 {
     private static bool _flag = true;
-    private static readonly PatternTestRegistry PatternTestRegistry = new();
+    private static readonly ExecutorRegistry PatternTestRegistry = new();
     private static void Main()
     {
         try
