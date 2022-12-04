@@ -4,8 +4,12 @@ namespace DesignPatterns.CreationalPatterns.Singleton
 {
     public class SingletonTest: ISingletonTest
     {
-        public SingletonTest()
+        private static bool _isTestPassed = true;
+        private const string PatternName = "Singleton";
+
+        public string GetPatternName()
         {
+            return PatternName;
         }
 
         public void Test()
@@ -31,7 +35,6 @@ namespace DesignPatterns.CreationalPatterns.Singleton
 
         private static void InitializeSingletonObjects()
         {
-            var isTestPassed = true;
             Console.WriteLine(SingletonConsoleMessages.CountQuestion);
 
             var objectCountToGenerate = ConsoleExtension.ReadIntegerFromConsole();
@@ -41,12 +44,12 @@ namespace DesignPatterns.CreationalPatterns.Singleton
             {
                 var currentObjectName = Singleton.GetObject().GetName();
                 if (previousObjectName != currentObjectName)
-                    isTestPassed = false;
+                    _isTestPassed = false;
                 previousObjectName = currentObjectName;
                 Console.WriteLine(currentObjectName);
             }
 
-            Console.WriteLine(isTestPassed
+            Console.WriteLine(_isTestPassed
                 ? SingletonConsoleMessages.TestSucceeded
                 : SingletonConsoleMessages.TestFailed);
         }
@@ -55,10 +58,12 @@ namespace DesignPatterns.CreationalPatterns.Singleton
         {
             var firstObject = Singleton.GetObject();
             var secondObject = Singleton.GetObject();
-            if(firstObject == secondObject)
-                Console.WriteLine(SingletonConsoleMessages.TestSucceeded);
-            else
-                Console.WriteLine(SingletonConsoleMessages.TestFailed);
+            if (firstObject != secondObject)
+                _isTestPassed = false;
+
+            Console.WriteLine(_isTestPassed
+                ? SingletonConsoleMessages.TestSucceeded
+                : SingletonConsoleMessages.TestFailed);
         }
 
 

@@ -4,9 +4,9 @@ namespace DesignPatterns.CreationalPatterns.Singleton
     internal class SingletonConsoleMessages
     {
         internal const string Information = "There are '2' tests for Basic Singleton Design Pattern\n" +
+                                            "0: Quit this menu." +
                                             "1: Initializes multiple singleton objects with serial numbers.\n" +
-                                            "2: Initializes two singleton objects and checks if they are really same objects.\n" +
-                                            "0: Quit this menu.";
+                                            "2: Initializes two singleton objects and checks if they are really same objects.\n";
 
         internal const string CountQuestion = "How many objects do you want to create?";
 
