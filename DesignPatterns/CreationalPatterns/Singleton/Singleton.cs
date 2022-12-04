@@ -1,12 +1,15 @@
 ﻿
 namespace DesignPatterns.CreationalPatterns.Singleton
 {
-    public class Singleton
+    public sealed class Singleton
     {
-        private static readonly Singleton SingletonObject = new();
+        private static readonly Singleton Instance = new();
         private readonly int _objectNumber;
         private readonly string _objectName;
 
+        static Singleton()
+        {
+        }
         private Singleton()
         {
             _objectNumber++;
@@ -14,7 +17,7 @@ namespace DesignPatterns.CreationalPatterns.Singleton
         }
         public static Singleton GetObject()
         {
-            return SingletonObject;
+            return Instance;
         }
 
         public string GetName()

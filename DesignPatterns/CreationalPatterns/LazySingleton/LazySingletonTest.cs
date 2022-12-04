@@ -5,6 +5,13 @@ namespace DesignPatterns.CreationalPatterns.LazySingleton
     public class LazySingletonTest: ILazySingleton
     {
         private static bool _isTestPassed = true;
+        private const string PatternName = "Lazy Singleton";
+
+        public string GetPatternName()
+        {
+            return PatternName;
+        }
+
         public void Test()
         {
             Console.WriteLine(LazySingletonConsoleMessages.Information);
