@@ -1,5 +1,5 @@
 ﻿
-namespace Core
+namespace Core.Extensions
 {
     public static class ConsoleExtension
     {
@@ -39,5 +39,7 @@ namespace Core
                 throw new Exception($"Program failed. Exception: {ex.Message}");
             }
         }
+
+        //TODO public static int ReadPositiveIntegerFromConsole()
     }
 }

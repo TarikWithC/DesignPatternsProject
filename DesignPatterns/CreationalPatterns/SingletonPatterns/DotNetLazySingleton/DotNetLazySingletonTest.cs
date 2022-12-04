@@ -1,4 +1,5 @@
 ﻿using Core;
+using Core.Extensions;
 
 namespace DesignPatterns.CreationalPatterns.SingletonPatterns.DotNetLazySingleton
 {

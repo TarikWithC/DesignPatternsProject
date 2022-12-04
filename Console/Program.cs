@@ -1,4 +1,5 @@
 ﻿using Core;
+using Core.Extensions;
 using DesignPatterns;
 
 namespace ConsoleApp;
