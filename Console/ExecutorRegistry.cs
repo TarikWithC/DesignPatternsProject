@@ -1,6 +1,5 @@
 ﻿using System.Text;
 using DesignPatterns;
-using DesignPatterns.CreationalPatterns.SingletonPatterns;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Initiliazers;
 
 namespace ConsoleApp
