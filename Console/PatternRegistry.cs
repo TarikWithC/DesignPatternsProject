@@ -15,6 +15,7 @@ namespace ConsoleApp
         {
             Tests.TryAdd(++_serialNumber, new SingletonTest());
             Tests.TryAdd(++_serialNumber, new LazySingletonTest());
+            Tests.TryAdd(++_serialNumber, new LazySingletonTest());
             SavePatternNames();
         }
 
