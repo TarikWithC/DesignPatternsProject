@@ -1,7 +1,7 @@
 ﻿
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Interfaces;
 
-namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Entities
+namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Types
 {
     public sealed class DotNetLazySingleton: ISingleton
     {
@@ -23,13 +23,7 @@ namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Entities
         }
 
         //Best practice for thread safe lazy singleton objects using .NET
-        public static DotNetLazySingleton Instance
-        {
-            get
-            {
-                return instance.Value;
-            }
-        }
+        public static DotNetLazySingleton Instance => instance.Value;
 
         public string GetName()
         {
