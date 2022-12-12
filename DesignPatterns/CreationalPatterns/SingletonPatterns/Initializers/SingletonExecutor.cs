@@ -1,7 +1,7 @@
 ﻿using Core.Extensions;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Constants;
-using DesignPatterns.CreationalPatterns.SingletonPatterns.Entities;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Interfaces;
+using DesignPatterns.CreationalPatterns.SingletonPatterns.Types;
 
 namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers
 {
@@ -46,6 +46,7 @@ namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers
             Console.WriteLine(SingletonConsoleMessages.MainInformation);
             PrintPatternNames();
             var choice = ConsoleExtension.ReadIntegerFromConsole();
+
             if (choice == 0)
                 return;
             if (SingletonDictionary.ContainsKey(choice))
