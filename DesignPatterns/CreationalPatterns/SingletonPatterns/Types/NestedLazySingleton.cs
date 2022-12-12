@@ -1,7 +1,7 @@
 ﻿
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Interfaces;
 
-namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Entities
+namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Types
 {
     public sealed class NestedLazySingleton: ISingleton
     {

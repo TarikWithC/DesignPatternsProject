@@ -13,7 +13,6 @@ namespace ConsoleApp
         public ExecutorRegistry()
         {
             Executors.TryAdd(++_serialNumber, new SingletonExecutor());
-
             SavePatternNames();
         }
 
