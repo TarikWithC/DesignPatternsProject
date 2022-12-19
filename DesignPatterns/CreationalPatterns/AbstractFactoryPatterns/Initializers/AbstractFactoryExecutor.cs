@@ -1,9 +1,6 @@
 ﻿using DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Company.Abstractions;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.VehicleCompany.Abstractions;
 
 namespace DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.Initializers
