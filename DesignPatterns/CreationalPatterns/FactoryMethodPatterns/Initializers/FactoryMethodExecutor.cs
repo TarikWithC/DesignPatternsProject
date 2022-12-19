@@ -10,9 +10,9 @@ namespace DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Initializers
     public class FactoryMethodExecutor: IPatternExecutor
     {
         private const string PatternName  = "Factory Method";
-        private readonly EmployeeFactory _employeeFactory = new ();
-        private readonly ManagerFactory _managerFactory = new ();
-        private readonly DirectorFactory _directorFactory = new ();
+        private readonly IFactory _employeeFactory = new EmployeeFactory();
+        private readonly IFactory _managerFactory = new ManagerFactory();
+        private readonly IFactory _directorFactory = new DirectorFactory();
         public void Execute()
         {
             var employee = _employeeFactory.Create("Test Employee");
