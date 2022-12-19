@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using DesignPatterns;
+using DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.Initializers;
 using DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Initializers;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers;
 
@@ -15,6 +16,7 @@ namespace ConsoleApp
         {
             Executors.TryAdd(++_serialNumber, new SingletonExecutor());
             Executors.TryAdd(++_serialNumber, new FactoryMethodExecutor());
+            Executors.TryAdd(++_serialNumber, new AbstractFactoryExecutor());
             SavePatternNames();
         }
 
