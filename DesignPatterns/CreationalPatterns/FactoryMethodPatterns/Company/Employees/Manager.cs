@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Company.Employees
+﻿namespace DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Company.Employees
 {
-    public class Manager: Employee
+    public class Manager : Employee
     {
         private string ResponsibleDepartment { get; }
 
@@ -29,6 +23,5 @@ namespace DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Company.Employ
         {
             Console.WriteLine("Managing employees.");
         }
-
     }
 }

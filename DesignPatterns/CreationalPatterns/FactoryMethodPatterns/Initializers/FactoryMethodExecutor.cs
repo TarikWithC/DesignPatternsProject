@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Company.Abstractions;
+﻿using DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Company.Abstractions;
 
 namespace DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Initializers
 {
-    public class FactoryMethodExecutor: IPatternExecutor
+    public class FactoryMethodExecutor : IPatternExecutor
     {
-        private const string PatternName  = "Factory Method";
+        private const string PatternName = "Factory Method";
         private readonly IFactory _employeeFactory = new EmployeeFactory();
         private readonly IFactory _managerFactory = new ManagerFactory();
         private readonly IFactory _directorFactory = new DirectorFactory();
+
         public void Execute()
         {
             var employee = _employeeFactory.Create("Test Employee");

@@ -6,8 +6,11 @@ namespace DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.VehicleCompa
     public interface IVehicleFactory
     {
         IDrivable CreateCar() => new Car();
+
         IDrivable CreateTruck() => new Truck();
+
         IFlyable CreateJet() => new Jet();
+
         IFlyable CreatePlane() => new Plane();
     }
 }

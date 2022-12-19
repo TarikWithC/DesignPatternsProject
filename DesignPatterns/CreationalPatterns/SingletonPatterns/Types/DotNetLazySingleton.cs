@@ -1,21 +1,24 @@
-﻿
-using DesignPatterns.CreationalPatterns.SingletonPatterns.Interfaces;
+﻿using DesignPatterns.CreationalPatterns.SingletonPatterns.Interfaces;
 
 namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Types
 {
-    public sealed class DotNetLazySingleton: ISingleton
+    public sealed class DotNetLazySingleton : ISingleton
     {
         #region Class/Object Information
+
         private readonly int _objectNumber;
         private readonly string _objectName;
         private const string PatternName = ".NET Lazy Singleton";
+
         public string GetPatternName()
         {
             return PatternName;
         }
-        #endregion
+
+        #endregion Class/Object Information
 
         private static readonly Lazy<DotNetLazySingleton> instance = new(() => new DotNetLazySingleton());
+
         private DotNetLazySingleton()
         {
             _objectNumber++;

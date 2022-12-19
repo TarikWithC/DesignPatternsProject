@@ -5,18 +5,20 @@ using DesignPatterns.CreationalPatterns.SingletonPatterns.Types;
 
 namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers
 {
-    public class SingletonExecutor: IPatternExecutor
+    public class SingletonExecutor : IPatternExecutor
     {
         #region Class/Object Information
+
         private const string PatternName = "Singleton";
+
         public string GetPatternName()
         {
             return PatternName;
         }
-        #endregion
 
+        #endregion Class/Object Information
 
-        private readonly SingletonTest _singletonTester = new ();
+        private readonly SingletonTest _singletonTester = new();
         private static readonly Dictionary<int, ISingleton> SingletonDictionary = new();
         private static int _serialNumber;
 
@@ -41,6 +43,7 @@ namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers
                 Console.WriteLine($"{item.Key}: {item.Value.GetPatternName()}");
             }
         }
+
         public void Execute()
         {
             Console.WriteLine(SingletonConsoleMessages.MainInformation);

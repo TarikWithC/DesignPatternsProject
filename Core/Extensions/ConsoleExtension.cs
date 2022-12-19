@@ -1,5 +1,4 @@
-﻿
-namespace Core.Extensions
+﻿namespace Core.Extensions
 {
     public static class ConsoleExtension
     {
@@ -23,7 +22,6 @@ namespace Core.Extensions
                 throw new Exception($"Program failed. Exception: {ex.Message}");
             }
         }
-
 
         public static int ReadIntegerFromConsole()
         {

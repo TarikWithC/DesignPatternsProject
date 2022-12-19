@@ -1,8 +1,8 @@
-﻿using System.Text;
-using DesignPatterns;
+﻿using DesignPatterns;
 using DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.Initializers;
 using DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Initializers;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers;
+using System.Text;
 
 namespace ConsoleApp
 {
