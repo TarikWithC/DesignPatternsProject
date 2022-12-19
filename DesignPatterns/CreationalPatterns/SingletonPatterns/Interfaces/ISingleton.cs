@@ -3,7 +3,7 @@
     public interface ISingleton
     {
         public string GetName();
-        public string GetPatternName();
 
+        public string GetPatternName();
     }
 }

@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Company.Employees
+﻿namespace DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Company.Employees
 {
-    public class Director: Manager
+    public class Director : Manager
     {
         private string DirectedBranch { get; }
 
@@ -29,7 +23,5 @@ namespace DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Company.Employ
         {
             Console.WriteLine("Directing project.");
         }
-
-
     }
 }

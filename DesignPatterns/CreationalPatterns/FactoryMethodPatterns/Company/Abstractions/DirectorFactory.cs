@@ -2,7 +2,7 @@
 
 namespace DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Company.Abstractions
 {
-    public class DirectorFactory: IFactory
+    public class DirectorFactory : IFactory
     {
         public Employee Create(string name)
         {

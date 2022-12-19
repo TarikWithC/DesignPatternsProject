@@ -1,22 +1,25 @@
-﻿
-using DesignPatterns.CreationalPatterns.SingletonPatterns.Interfaces;
+﻿using DesignPatterns.CreationalPatterns.SingletonPatterns.Interfaces;
 
 namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Types
 {
-    public sealed class ThreadSafeLazySingleton: ISingleton
+    public sealed class ThreadSafeLazySingleton : ISingleton
     {
         #region Class/Object Information
+
         private readonly int _objectNumber;
         private readonly string _objectName;
         private const string PatternName = "Thread Safe Lazy Singleton";
+
         public string GetPatternName()
         {
             return PatternName;
         }
-        #endregion
+
+        #endregion Class/Object Information
 
         private static readonly object Padlock = new();
         private static ThreadSafeLazySingleton instance;
+
         private ThreadSafeLazySingleton()
         {
             _objectNumber++;
@@ -43,7 +46,6 @@ namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Types
 
                 return instance;
             }
-            
         }
 
         public string GetName()

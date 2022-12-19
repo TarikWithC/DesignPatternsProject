@@ -1,7 +1,4 @@
-﻿using DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Company.Abstractions;
-using System;
-using System.Collections.Generic;
-using DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.VehicleCompany.Abstractions;
+﻿using DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.VehicleCompany.Abstractions;
 
 namespace DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.Initializers
 {

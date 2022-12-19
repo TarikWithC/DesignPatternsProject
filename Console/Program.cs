@@ -2,10 +2,12 @@
 using DesignPatterns;
 
 namespace ConsoleApp;
+
 internal class Program
 {
     private static bool _flag = true;
     private static readonly ExecutorRegistry PatternTestRegistry = new();
+
     private static void Main()
     {
         try

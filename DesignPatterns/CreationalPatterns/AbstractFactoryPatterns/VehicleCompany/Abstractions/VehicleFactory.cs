@@ -1,5 +1,4 @@
-﻿
-namespace DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.VehicleCompany.Abstractions
+﻿namespace DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.VehicleCompany.Abstractions
 {
     public class VehicleFactory : IVehicleFactory
     {

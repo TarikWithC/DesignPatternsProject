@@ -6,7 +6,6 @@ namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers
 {
     public sealed class SingletonTest
     {
-
         private static bool _isTestPassed = true;
         private const string ExpectedInstanceName = "Instance SN: 1.";
 
@@ -18,17 +17,18 @@ namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers
             {
                 case 0:
                     break;
+
                 case 1:
                     StartThreads(singletonObject);
                     PrintResults();
                     break;
+
                 default:
                     Console.WriteLine(SingletonConsoleMessages.CommandNotFound);
                     Test(singletonObject);
                     break;
             }
         }
-
 
         private static void CreateAndCheckInstance(ISingleton singletonObject)
         {
@@ -58,6 +58,5 @@ namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers
                 ? SingletonConsoleMessages.TestSucceeded
                 : SingletonConsoleMessages.TestFailed);
         }
-        
     }
 }
