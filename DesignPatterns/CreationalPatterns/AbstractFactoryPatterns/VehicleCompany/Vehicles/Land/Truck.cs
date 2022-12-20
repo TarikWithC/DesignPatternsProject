@@ -4,6 +4,10 @@ namespace DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.VehicleCompa
 {
     public class Truck : IDrivable
     {
+        public Truck()
+        {
+            Console.WriteLine("Truck is created.");
+        }
         public void Move()
         {
             Console.WriteLine("Truck is moving");

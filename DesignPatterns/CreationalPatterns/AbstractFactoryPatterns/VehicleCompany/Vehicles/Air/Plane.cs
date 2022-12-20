@@ -4,6 +4,10 @@ namespace DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.VehicleCompa
 {
     public class Plane : IFlyable
     {
+        public Plane()
+        {
+            Console.WriteLine("Plane is created");
+        }
         public void Fly()
         {
             Console.WriteLine("Plane is flying.");
