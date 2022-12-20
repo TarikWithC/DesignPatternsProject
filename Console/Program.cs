@@ -27,7 +27,7 @@ internal class Program
     {
         Console.ForegroundColor = ConsoleColor.DarkCyan;
         Console.WriteLine(ConsoleMenuMessages.MainInfo + PatternTestRegistry.PatternNames);
-        var choice = ConsoleExtension.ReadIntegerFromConsole();
+        var choice = ConsoleReader.ReadIntegerFromConsole();
 
         var executors = PatternTestRegistry.Executors;
         if (choice == 0)

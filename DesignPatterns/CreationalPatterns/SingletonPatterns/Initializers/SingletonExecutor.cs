@@ -48,7 +48,7 @@ namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers
         {
             Console.WriteLine(SingletonConsoleMessages.MainInformation);
             PrintPatternNames();
-            var choice = ConsoleExtension.ReadIntegerFromConsole();
+            var choice = ConsoleReader.ReadIntegerFromConsole();
 
             if (choice == 0)
                 return;

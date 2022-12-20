@@ -1,4 +1,5 @@
 ﻿using Core.Extensions;
+using Core.Helpers;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Constants;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Interfaces;
 
@@ -11,8 +12,8 @@ namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers
 
         public void Test(ISingleton singletonObject)
         {
-            Console.WriteLine(SingletonConsoleMessages.Information(singletonObject.GetPatternName()));
-            var input = ConsoleExtension.ReadIntegerFromConsole();
+            ConsolePrinter.PrintPatternWelcomeMessage(singletonObject.GetPatternName());
+            var input = ConsoleReader.ReadIntegerFromConsole();
             switch (input)
             {
                 case 0:
@@ -43,7 +44,7 @@ namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers
         private static void StartThreads(ISingleton singletonObject)
         {
             Console.WriteLine(SingletonConsoleMessages.CountQuestion);
-            var objectCountToGenerate = ConsoleExtension.ReadIntegerFromConsole();
+            var objectCountToGenerate = ConsoleReader.ReadIntegerFromConsole();
             for (var i = 0; i < objectCountToGenerate; i++)
             {
                 var thread = new Thread(() => CreateAndCheckInstance(singletonObject));
