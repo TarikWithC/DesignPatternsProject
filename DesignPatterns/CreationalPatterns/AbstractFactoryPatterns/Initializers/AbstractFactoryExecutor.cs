@@ -1,6 +1,6 @@
 ﻿using Core.Extensions;
+using Core.Helpers;
 using DesignPatterns.Constants;
-using DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.Constants;
 
 namespace DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.Initializers
 {
@@ -17,8 +17,8 @@ namespace DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.Initializers
         private readonly AbstractFactoryTest _abstractFactoryTest = new ();
         public void Execute()
         {
-            Console.WriteLine(AbstractFactoryMessages.MainInformation);
-            var choice = ConsoleExtension.ReadIntegerFromConsole();
+            ConsolePrinter.PrintPatternWelcomeMessage(patternName: PatternName);
+            var choice = ConsoleReader.ReadIntegerFromConsole();
             switch (choice)
             {
                 case 0:

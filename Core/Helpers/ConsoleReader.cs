@@ -1,6 +1,6 @@
 ﻿namespace Core.Extensions
 {
-    public static class ConsoleExtension
+    public static class ConsoleReader
     {
         public static string ReadStringFromConsole()
         {
