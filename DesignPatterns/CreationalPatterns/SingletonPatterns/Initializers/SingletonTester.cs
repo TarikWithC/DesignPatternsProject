@@ -4,7 +4,7 @@ using DesignPatterns.CreationalPatterns.SingletonPatterns.Interfaces;
 
 namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers
 {
-    public sealed class SingletonTest
+    public sealed class SingletonTester
     {
         private static bool _isTestPassed = true;
         private const string ExpectedInstanceName = "Instance SN: 1.";

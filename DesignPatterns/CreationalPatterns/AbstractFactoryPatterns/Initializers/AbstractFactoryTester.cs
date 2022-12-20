@@ -1,8 +1,9 @@
-﻿using DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.VehicleCompany.Abstractions;
+﻿using Core.Interfaces;
+using DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.VehicleCompany.Abstractions;
 
 namespace DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.Initializers
 {
-    public sealed class AbstractFactoryTest
+    public sealed class AbstractFactoryTester: IPatternTester
     {
         private readonly IVehicleFactory _vehicleFactory = new VehicleFactory();
         public void Test()

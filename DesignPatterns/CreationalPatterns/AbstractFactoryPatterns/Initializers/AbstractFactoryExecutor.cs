@@ -1,5 +1,5 @@
-﻿using Core.Helpers;
-using DesignPatterns.Constants;
+﻿using Core.Interfaces;
+using Core.Utils;
 
 namespace DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.Initializers
 {
@@ -13,23 +13,11 @@ namespace DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.Initializers
         }
         #endregion Class/Object Information
 
-        private readonly AbstractFactoryTest _abstractFactoryTest = new ();
+        private readonly AbstractFactoryTester _abstractFactoryTest = new ();
+        private readonly GenericExecutor _genericExecutor = new ();
         public void Execute()
         {
-            ConsolePrinter.PrintPatternWelcomeMessage(patternName: PatternName);
-            var choice = ConsoleReader.ReadIntegerFromConsole();
-            switch (choice)
-            {
-                case 0:
-                    return;
-                case 1:
-                    _abstractFactoryTest.Test();
-                    break;
-                default:
-                    Console.WriteLine(ConsoleMessages.CommandNotFound);
-                    Execute();
-                    break;
-            }
+            _genericExecutor.ExecuteStandardTest(tester: _abstractFactoryTest, patternName: PatternName);
         }
     }
 }
