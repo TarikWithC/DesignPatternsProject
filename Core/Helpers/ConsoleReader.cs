@@ -1,4 +1,4 @@
-﻿namespace Core.Extensions
+﻿namespace Core.Helpers
 {
     public static class ConsoleReader
     {

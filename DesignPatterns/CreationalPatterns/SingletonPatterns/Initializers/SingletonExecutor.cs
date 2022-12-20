@@ -1,4 +1,4 @@
-﻿using Core.Extensions;
+﻿using Core.Helpers;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Constants;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Interfaces;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Types;

@@ -1,5 +1,4 @@
-﻿using Core.Extensions;
-using Core.Helpers;
+﻿using Core.Helpers;
 using DesignPatterns.Constants;
 
 namespace DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.Initializers
