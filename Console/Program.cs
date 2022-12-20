@@ -1,5 +1,5 @@
 ﻿using Core.Helpers;
-using DesignPatterns;
+using Core.Interfaces;
 
 namespace ConsoleApp;
 

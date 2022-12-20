@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns
+﻿namespace Core.Interfaces
 {
     public interface IPatternExecutor
     {

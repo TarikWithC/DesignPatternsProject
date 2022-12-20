@@ -1,4 +1,5 @@
 ﻿using Core.Helpers;
+using Core.Interfaces;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Constants;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Interfaces;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Types;
@@ -18,7 +19,7 @@ namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers
 
         #endregion Class/Object Information
 
-        private readonly SingletonTest _singletonTester = new();
+        private readonly SingletonTester _singletonTester = new();
         private static readonly Dictionary<int, ISingleton> SingletonDictionary = new();
         private static int _serialNumber;
 
