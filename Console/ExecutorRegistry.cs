@@ -2,7 +2,9 @@
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers;
 using System.Text;
 using DesignPatterns.CreationalPatterns.AbstractFactory.Initializers;
-using DesignPatterns.CreationalPatterns.FactoryMethod.Initializers;
+using DesignPatterns.CreationalPatterns.Builder.Initializers;
+using DesignPatterns.CreationalPatterns.FactoryMethod.Company.Initializers;
+using DesignPatterns.CreationalPatterns.Prototype.Game.Initializers;
 
 namespace ConsoleApp
 {
@@ -17,6 +19,8 @@ namespace ConsoleApp
             Executors.TryAdd(++_serialNumber, new SingletonExecutor());
             Executors.TryAdd(++_serialNumber, new FactoryMethodExecutor());
             Executors.TryAdd(++_serialNumber, new AbstractFactoryExecutor());
+            Executors.TryAdd(++_serialNumber, new PrototypeExecutor());
+            Executors.TryAdd(++_serialNumber, new BuilderExecutor());
             SavePatternNames();
         }
 
