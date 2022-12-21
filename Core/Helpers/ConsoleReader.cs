@@ -23,6 +23,31 @@
             }
         }
 
+        public static bool ReadYesOrNoFromConsole()
+        {
+            try
+            {
+                var input = ReadStringFromConsole();
+                switch (input)
+                {
+                    case "y" or "Y":
+                        return true;
+                    case "n" or "N":
+                        return false;
+                }
+
+                var currentColor = Console.ForegroundColor;
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("Please enter key 'Y' or key 'N'.");
+                Console.ForegroundColor = currentColor;
+                return ReadYesOrNoFromConsole();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Program failed. Exception: {ex.Message}");
+            }
+        }
+
         public static int ReadIntegerFromConsole()
         {
             try
@@ -43,6 +68,8 @@
                 throw new Exception($"Program failed. Exception: {ex.Message}");
             }
         }
+
+        
 
         //TODO public static int ReadPositiveIntegerFromConsole()
     }
