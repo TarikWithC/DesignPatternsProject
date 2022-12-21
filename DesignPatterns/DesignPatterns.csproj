@@ -8,6 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="CreationalPatterns\PrototypePatterns\**" />
+    <EmbeddedResource Remove="CreationalPatterns\PrototypePatterns\**" />
+    <None Remove="CreationalPatterns\PrototypePatterns\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="BehavioralPatterns\" />
     <Folder Include="OtherPatterns\" />
     <Folder Include="StructuralPatterns\" />
