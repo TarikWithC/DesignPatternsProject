@@ -3,7 +3,7 @@ using DesignPatterns.CreationalPatterns.AbstractFactory.VehicleCompany.Vehicles.
 
 namespace DesignPatterns.CreationalPatterns.AbstractFactory.VehicleCompany.Abstractions
 {
-    public interface IVehicleFactory
+    internal interface IVehicleFactory
     {
         IDrivable CreateCar() => new Car();
 
