@@ -1,6 +1,4 @@
-﻿using System.Xml;
-
-namespace DesignPatterns.Constants
+﻿namespace DesignPatterns.Constants
 {
     public class ConsoleMessages
     {

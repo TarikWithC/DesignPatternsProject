@@ -1,6 +1,6 @@
-﻿using Core.Helpers;
+﻿using Core.Constants;
+using Core.Helpers;
 using Core.Interfaces;
-using Core.Constants;
 
 namespace Core.Utils
 {
@@ -14,9 +14,11 @@ namespace Core.Utils
             {
                 case 0:
                     return;
+
                 case 1:
                     tester.Test();
                     break;
+
                 default:
                     Console.WriteLine(ConsoleMessages.CommandNotFound);
                     ExecuteStandardTest(tester, patternName);

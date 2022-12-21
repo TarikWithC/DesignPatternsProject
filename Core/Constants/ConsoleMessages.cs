@@ -1,5 +1,4 @@
-﻿
-namespace Core.Constants
+﻿namespace Core.Constants
 {
     public class ConsoleMessages
     {

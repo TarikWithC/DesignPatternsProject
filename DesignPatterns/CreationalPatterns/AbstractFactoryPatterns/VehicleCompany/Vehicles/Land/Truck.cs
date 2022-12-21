@@ -8,6 +8,7 @@ namespace DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.VehicleCompa
         {
             Console.WriteLine("Truck is created.");
         }
+
         public void Move()
         {
             Console.WriteLine("Truck is moving");

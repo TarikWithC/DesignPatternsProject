@@ -5,10 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Core.Interfaces;
 
 namespace DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Initializers
 {
-    internal sealed class FactoryMethodTester
+    internal sealed class FactoryMethodTester : IPatternTester
     {
         private readonly IFactory _employeeFactory = new EmployeeFactory();
         private readonly IFactory _managerFactory = new ManagerFactory();
@@ -20,7 +21,6 @@ namespace DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Initializers
             var employee = _employeeFactory.Create("Test Employee");
             var manager = _managerFactory.Create("Test Manager");
             var director = _directorFactory.Create("Test Director");
-            Console.WriteLine("------------------");
             employee.Work();
             manager.Work();
             director.Work();
