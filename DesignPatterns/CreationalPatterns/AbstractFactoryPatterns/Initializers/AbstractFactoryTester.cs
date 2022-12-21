@@ -3,9 +3,10 @@ using DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.VehicleCompany.A
 
 namespace DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.Initializers
 {
-    internal sealed class AbstractFactoryTester: IPatternTester
+    internal sealed class AbstractFactoryTester : IPatternTester
     {
         private readonly IVehicleFactory _vehicleFactory = new VehicleFactory();
+
         public void Test()
         {
             Console.WriteLine("------------------");

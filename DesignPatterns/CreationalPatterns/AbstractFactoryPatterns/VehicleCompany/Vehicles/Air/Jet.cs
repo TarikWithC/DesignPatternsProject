@@ -8,6 +8,7 @@ namespace DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.VehicleCompa
         {
             Console.WriteLine("Jet is created");
         }
+
         public void Fly()
         {
             Console.WriteLine("Jet is flying.");

@@ -21,7 +21,6 @@ namespace DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Initializers
             var employee = _employeeFactory.Create("Test Employee");
             var manager = _managerFactory.Create("Test Manager");
             var director = _directorFactory.Create("Test Director");
-            Console.WriteLine("------------------");
             employee.Work();
             manager.Work();
             director.Work();
