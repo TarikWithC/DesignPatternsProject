@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.VehicleCompany.Abstractions
+﻿namespace DesignPatterns.CreationalPatterns.AbstractFactory.VehicleCompany.Abstractions
 {
     public interface IDrivable
     {
