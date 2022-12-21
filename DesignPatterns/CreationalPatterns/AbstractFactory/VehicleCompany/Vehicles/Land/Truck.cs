@@ -1,6 +1,6 @@
-﻿using DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.VehicleCompany.Abstractions;
+﻿using DesignPatterns.CreationalPatterns.AbstractFactory.VehicleCompany.Abstractions;
 
-namespace DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.VehicleCompany.Vehicles.Land
+namespace DesignPatterns.CreationalPatterns.AbstractFactory.VehicleCompany.Vehicles.Land
 {
     public class Truck : IDrivable
     {

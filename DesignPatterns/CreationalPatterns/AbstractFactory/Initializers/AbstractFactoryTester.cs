@@ -1,7 +1,7 @@
 ﻿using Core.Interfaces;
-using DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.VehicleCompany.Abstractions;
+using DesignPatterns.CreationalPatterns.AbstractFactory.VehicleCompany.Abstractions;
 
-namespace DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.Initializers
+namespace DesignPatterns.CreationalPatterns.AbstractFactory.Initializers
 {
     internal sealed class AbstractFactoryTester : IPatternTester
     {

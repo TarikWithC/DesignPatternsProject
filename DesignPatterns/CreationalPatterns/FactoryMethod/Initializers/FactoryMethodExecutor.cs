@@ -1,8 +1,7 @@
 ﻿using Core.Interfaces;
-using Core.Utils;
 using DesignPatterns.Base;
 
-namespace DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Initializers
+namespace DesignPatterns.CreationalPatterns.FactoryMethod.Initializers
 {
     public class FactoryMethodExecutor : BaseExecutor, IPatternExecutor
     {

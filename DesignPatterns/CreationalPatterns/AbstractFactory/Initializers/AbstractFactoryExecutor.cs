@@ -1,8 +1,7 @@
 ﻿using Core.Interfaces;
-using Core.Utils;
 using DesignPatterns.Base;
 
-namespace DesignPatterns.CreationalPatterns.AbstractFactoryPatterns.Initializers
+namespace DesignPatterns.CreationalPatterns.AbstractFactory.Initializers
 {
     public sealed class AbstractFactoryExecutor : BaseExecutor, IPatternExecutor
     {

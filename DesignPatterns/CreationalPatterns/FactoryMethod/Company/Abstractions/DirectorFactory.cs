@@ -1,6 +1,6 @@
-﻿using DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Company.Employees;
+﻿using DesignPatterns.CreationalPatterns.FactoryMethod.Company.Employees;
 
-namespace DesignPatterns.CreationalPatterns.FactoryMethodPatterns.Company.Abstractions
+namespace DesignPatterns.CreationalPatterns.FactoryMethod.Company.Abstractions
 {
     public class DirectorFactory : IFactory
     {
