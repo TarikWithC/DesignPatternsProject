@@ -1,6 +1,6 @@
-﻿using DesignPatterns.CreationalPatterns.Prototype.Game.Objects;
+﻿using DesignPatterns.CreationalPatterns.Prototype.Concretes;
 
-namespace DesignPatterns.CreationalPatterns.Prototype.Game.Abstractions
+namespace DesignPatterns.CreationalPatterns.Prototype.Abstractions
 {
     internal interface ISoldierFactory
     {

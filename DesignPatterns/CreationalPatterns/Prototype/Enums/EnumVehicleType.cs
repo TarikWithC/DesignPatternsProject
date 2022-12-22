@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.CreationalPatterns.Prototype.Game.Enums
+﻿namespace DesignPatterns.CreationalPatterns.Prototype.Enums
 {
     public enum EnumVehicleType
     {

@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.CreationalPatterns.Prototype.Game.Constants
+﻿namespace DesignPatterns.CreationalPatterns.Prototype.Constants
 {
     internal class PrototypeConsoleMessages
     {

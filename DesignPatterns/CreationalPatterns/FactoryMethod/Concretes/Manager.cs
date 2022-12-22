@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.CreationalPatterns.FactoryMethod.Company.Employees
+﻿namespace DesignPatterns.CreationalPatterns.FactoryMethod.Concretes
 {
     public class Manager : Employee
     {

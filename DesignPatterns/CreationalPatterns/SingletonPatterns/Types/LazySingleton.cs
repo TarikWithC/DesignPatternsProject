@@ -1,4 +1,4 @@
-﻿using DesignPatterns.CreationalPatterns.SingletonPatterns.Interfaces;
+﻿using DesignPatterns.CreationalPatterns.SingletonPatterns.Abstractions;
 
 namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Types
 {

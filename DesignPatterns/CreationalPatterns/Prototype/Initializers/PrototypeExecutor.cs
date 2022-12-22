@@ -1,7 +1,7 @@
 ﻿using Core.Interfaces;
 using DesignPatterns.Base;
 
-namespace DesignPatterns.CreationalPatterns.Prototype.Game.Initializers
+namespace DesignPatterns.CreationalPatterns.Prototype.Initializers
 {
     public class PrototypeExecutor : BaseExecutor, IPatternExecutor
     {

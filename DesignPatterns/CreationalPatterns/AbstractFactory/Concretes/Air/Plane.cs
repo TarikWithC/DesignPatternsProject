@@ -1,6 +1,6 @@
-﻿using DesignPatterns.CreationalPatterns.AbstractFactory.VehicleCompany.Abstractions;
+﻿using DesignPatterns.CreationalPatterns.AbstractFactory.Abstractions;
 
-namespace DesignPatterns.CreationalPatterns.AbstractFactory.VehicleCompany.Vehicles.Air
+namespace DesignPatterns.CreationalPatterns.AbstractFactory.Concretes.Air
 {
     public class Plane : IFlyable
     {

@@ -1,6 +1,6 @@
-﻿using DesignPatterns.CreationalPatterns.Prototype.Game.Enums;
+﻿using DesignPatterns.CreationalPatterns.Prototype.Enums;
 
-namespace DesignPatterns.CreationalPatterns.Prototype.Game.Objects
+namespace DesignPatterns.CreationalPatterns.Prototype.Concretes
 {
     public class Weapon
     {
