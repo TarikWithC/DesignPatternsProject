@@ -1,7 +1,7 @@
-﻿using DesignPatterns.CreationalPatterns.AbstractFactory.VehicleCompany.Vehicles.Air;
-using DesignPatterns.CreationalPatterns.AbstractFactory.VehicleCompany.Vehicles.Land;
+﻿using DesignPatterns.CreationalPatterns.AbstractFactory.Concretes.Air;
+using DesignPatterns.CreationalPatterns.AbstractFactory.Concretes.Land;
 
-namespace DesignPatterns.CreationalPatterns.AbstractFactory.VehicleCompany.Abstractions
+namespace DesignPatterns.CreationalPatterns.AbstractFactory.Abstractions
 {
     public interface IVehicleFactory
     {

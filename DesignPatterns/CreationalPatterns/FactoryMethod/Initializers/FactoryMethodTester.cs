@@ -1,7 +1,7 @@
 ﻿using Core.Interfaces;
-using DesignPatterns.CreationalPatterns.FactoryMethod.Company.Abstractions;
+using DesignPatterns.CreationalPatterns.FactoryMethod.Abstractions;
 
-namespace DesignPatterns.CreationalPatterns.FactoryMethod.Company.Initializers
+namespace DesignPatterns.CreationalPatterns.FactoryMethod.Initializers
 {
     internal sealed class FactoryMethodTester : IPatternTester
     {

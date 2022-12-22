@@ -1,5 +1,5 @@
 ﻿using Core.Interfaces;
-using DesignPatterns.CreationalPatterns.AbstractFactory.VehicleCompany.Abstractions;
+using DesignPatterns.CreationalPatterns.AbstractFactory.Abstractions;
 
 namespace DesignPatterns.CreationalPatterns.AbstractFactory.Initializers
 {

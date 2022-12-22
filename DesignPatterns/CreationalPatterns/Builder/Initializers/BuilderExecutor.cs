@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Core.Interfaces;
 using DesignPatterns.Base;
-using DesignPatterns.CreationalPatterns.Prototype.Game.Initializers;
 
 namespace DesignPatterns.CreationalPatterns.Builder.Initializers
 {

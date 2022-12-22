@@ -1,8 +1,8 @@
-﻿using DesignPatterns.CreationalPatterns.Prototype.Game.Abstractions;
-using DesignPatterns.CreationalPatterns.Prototype.Game.Enums;
-using DesignPatterns.CreationalPatterns.Prototype.Game.Objects;
+﻿using DesignPatterns.CreationalPatterns.Prototype.Abstractions;
+using DesignPatterns.CreationalPatterns.Prototype.Concretes;
+using DesignPatterns.CreationalPatterns.Prototype.Enums;
 
-namespace DesignPatterns.CreationalPatterns.Prototype.Game.Factories
+namespace DesignPatterns.CreationalPatterns.Prototype.Factories
 {
     internal class SoldierFactory : ISoldierFactory
     {

@@ -1,12 +1,12 @@
 ﻿using Core.Constants;
 using Core.Helpers;
 using Core.Interfaces;
-using DesignPatterns.CreationalPatterns.Prototype.Game.Abstractions;
-using DesignPatterns.CreationalPatterns.Prototype.Game.Constants;
-using DesignPatterns.CreationalPatterns.Prototype.Game.Enums;
-using DesignPatterns.CreationalPatterns.Prototype.Game.Factories;
+using DesignPatterns.CreationalPatterns.Prototype.Abstractions;
+using DesignPatterns.CreationalPatterns.Prototype.Constants;
+using DesignPatterns.CreationalPatterns.Prototype.Enums;
+using DesignPatterns.CreationalPatterns.Prototype.Factories;
 
-namespace DesignPatterns.CreationalPatterns.Prototype.Game.Initializers
+namespace DesignPatterns.CreationalPatterns.Prototype.Initializers
 {
     internal class PrototypeTester : IPatternTester
     {

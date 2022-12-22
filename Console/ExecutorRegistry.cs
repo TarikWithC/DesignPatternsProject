@@ -3,8 +3,8 @@ using DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers;
 using System.Text;
 using DesignPatterns.CreationalPatterns.AbstractFactory.Initializers;
 using DesignPatterns.CreationalPatterns.Builder.Initializers;
-using DesignPatterns.CreationalPatterns.FactoryMethod.Company.Initializers;
-using DesignPatterns.CreationalPatterns.Prototype.Game.Initializers;
+using DesignPatterns.CreationalPatterns.FactoryMethod.Initializers;
+using DesignPatterns.CreationalPatterns.Prototype.Initializers;
 
 namespace ConsoleApp
 {

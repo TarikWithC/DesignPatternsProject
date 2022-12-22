@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Interfaces
+﻿namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Abstractions
 {
     public interface ISingleton
     {

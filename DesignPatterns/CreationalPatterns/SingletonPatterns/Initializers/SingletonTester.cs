@@ -1,6 +1,6 @@
 ﻿using Core.Helpers;
+using DesignPatterns.CreationalPatterns.SingletonPatterns.Abstractions;
 using DesignPatterns.CreationalPatterns.SingletonPatterns.Constants;
-using DesignPatterns.CreationalPatterns.SingletonPatterns.Interfaces;
 
 namespace DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers
 {
