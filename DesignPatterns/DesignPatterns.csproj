@@ -16,7 +16,7 @@
   <ItemGroup>
     <Folder Include="BehavioralPatterns\" />
     <Folder Include="OtherPatterns\" />
-    <Folder Include="StructuralPatterns\" />
+    <Folder Include="StructuralPatterns\Flyweight\" />
   </ItemGroup>
 
   <ItemGroup>
