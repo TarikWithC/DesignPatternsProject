@@ -678,4 +678,7 @@ fabric.properties
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
+desktop.ini
+.desktop.ini
+
 # End of https://www.toptal.com/developers/gitignore/api/csharp,visualstudio,visualstudiocode,rider,dotnetcore
