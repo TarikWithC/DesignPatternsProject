@@ -2,7 +2,7 @@
 
 namespace DesignPatterns.CreationalPatterns.Prototype.Concretes
 {
-    public class Soldier 
+    public class Soldier
     {
         public int Level { get; set; }
         public string? Name { get; set; }

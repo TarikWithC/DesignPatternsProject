@@ -32,6 +32,7 @@
                 {
                     case "y" or "Y":
                         return true;
+
                     case "n" or "N":
                         return false;
                 }
@@ -68,8 +69,6 @@
                 throw new Exception($"Program failed. Exception: {ex.Message}");
             }
         }
-
-        
 
         //TODO public static int ReadPositiveIntegerFromConsole()
     }

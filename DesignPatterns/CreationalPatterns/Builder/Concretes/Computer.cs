@@ -1,5 +1,4 @@
-﻿
-using DesignPatterns.CreationalPatterns.Builder.Abstractions;
+﻿using DesignPatterns.CreationalPatterns.Builder.Abstractions;
 
 using DesignPatterns.CreationalPatterns.Builder.Concretes.Parts;
 
@@ -15,14 +14,10 @@ namespace DesignPatterns.CreationalPatterns.Builder.Concretes
 
         public Computer()
         {
-
         }
-
-        
 
         public class ComputerBuilder : IComputerBuilder
         {
-           
             private bool _hasCpu;
             private bool _hasGpu;
             private bool _hasHardDrive;
@@ -34,26 +29,31 @@ namespace DesignPatterns.CreationalPatterns.Builder.Concretes
             {
                 this._name = name;
             }
+
             public IComputerBuilder BuildCpu()
             {
                 _hasCpu = true;
                 return this;
             }
+
             public IComputerBuilder BuildGpu()
             {
                 _hasGpu = true;
                 return this;
             }
+
             public IComputerBuilder BuildHardDrive()
             {
                 _hasHardDrive = true;
                 return this;
             }
+
             public IComputerBuilder BuildRam()
             {
                 _hasRam = true;
                 return this;
             }
+
             public Computer Build()
             {
                 _computer = new Computer
@@ -98,7 +98,5 @@ namespace DesignPatterns.CreationalPatterns.Builder.Concretes
                                   $"PC has RAM: {_hasRam}\n");
             }
         }
-
-        
     }
 }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns.CreationalPatterns.Builder.Constants
+﻿namespace DesignPatterns.CreationalPatterns.Builder.Constants
 {
     internal class BuilderConsoleMessages
     {
@@ -17,6 +11,5 @@ namespace DesignPatterns.CreationalPatterns.Builder.Constants
         internal const string HardDriveQuestion = "Do you want a Hard Drive in your setup? Y/N";
 
         internal const string RamQuestion = "Do you want a Ram in your setup? Y/N";
-
     }
 }
