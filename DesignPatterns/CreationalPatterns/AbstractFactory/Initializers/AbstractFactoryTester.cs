@@ -1,5 +1,6 @@
 ﻿using Core.Interfaces;
 using DesignPatterns.CreationalPatterns.AbstractFactory.Abstractions;
+using DesignPatterns.CreationalPatterns.AbstractFactory.Concretes;
 
 namespace DesignPatterns.CreationalPatterns.AbstractFactory.Initializers
 {

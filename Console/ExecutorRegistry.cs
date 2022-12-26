@@ -5,6 +5,7 @@ using DesignPatterns.CreationalPatterns.AbstractFactory.Initializers;
 using DesignPatterns.CreationalPatterns.Builder.Initializers;
 using DesignPatterns.CreationalPatterns.FactoryMethod.Initializers;
 using DesignPatterns.CreationalPatterns.Prototype.Initializers;
+using DesignPatterns.StructuralPatterns.Flyweight.Initializers;
 
 namespace ConsoleApp
 {
@@ -21,6 +22,7 @@ namespace ConsoleApp
             Executors.TryAdd(++_serialNumber, new AbstractFactoryExecutor());
             Executors.TryAdd(++_serialNumber, new PrototypeExecutor());
             Executors.TryAdd(++_serialNumber, new BuilderExecutor());
+            Executors.TryAdd(++_serialNumber, new FlyweightExecutor());
             SavePatternNames();
         }
 
