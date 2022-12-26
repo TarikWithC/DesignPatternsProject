@@ -9,7 +9,7 @@ namespace DesignPatterns.CreationalPatterns.Prototype.Factories
         private static readonly Weapon Prototype = new(EnumWeaponType.Unknown, 0, 0);
         private static readonly Weapon LowCaliberPrototype = new(EnumWeaponType.Pistol, 5.56, 14);
         private static readonly Weapon HighCaliberPrototype = new(EnumWeaponType.HeavyMachineGun, 7.62, 30);
-        
+
         public Weapon CreatePistol()
         {
             var weapon = LowCaliberPrototype.Clone();

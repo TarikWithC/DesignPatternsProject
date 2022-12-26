@@ -1,11 +1,11 @@
 ﻿using Core.Interfaces;
-using DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers;
-using System.Text;
 using DesignPatterns.CreationalPatterns.AbstractFactory.Initializers;
 using DesignPatterns.CreationalPatterns.Builder.Initializers;
 using DesignPatterns.CreationalPatterns.FactoryMethod.Initializers;
 using DesignPatterns.CreationalPatterns.Prototype.Initializers;
+using DesignPatterns.CreationalPatterns.SingletonPatterns.Initializers;
 using DesignPatterns.StructuralPatterns.Flyweight.Initializers;
+using System.Text;
 
 namespace ConsoleApp
 {

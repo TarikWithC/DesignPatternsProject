@@ -11,17 +11,17 @@ namespace DesignPatterns.StructuralPatterns.Flyweight.Initializers
         private readonly ICarFactory _carFactory = new CarFactory();
         private readonly ICarGalleryFactory _carGalleryFactory = new CarGalleryFactory();
         private readonly Random _random = new();
-        
+
         public void Test()
         {
             Console.WriteLine("What is your name?");
             var ownerName = ConsoleReader.ReadStringFromConsole();
             var carGallery = _carGalleryFactory.CreateIstanbulBranch(ownerName);
-            
+
             Console.WriteLine("How many Mustangs do you want to add your gallery?");
             var mustangCount = ConsoleReader.ReadIntegerFromConsole();
             var mustang = _carFactory.CreateBlackMustang(); //-> Flyweight Object
-            
+
             for (var i = 0; i < mustangCount; i++)
             {
                 carGallery.AddCarToInventory(new Car(
@@ -51,6 +51,5 @@ namespace DesignPatterns.StructuralPatterns.Flyweight.Initializers
                 item.PrintInfo();
             }
         }
-
     }
 }

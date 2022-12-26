@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Core.Interfaces;
+﻿using Core.Interfaces;
 using DesignPatterns.Base;
 
 namespace DesignPatterns.StructuralPatterns.Flyweight.Initializers
@@ -21,10 +16,10 @@ namespace DesignPatterns.StructuralPatterns.Flyweight.Initializers
         }
 
         #endregion Class/Object Information
+
         public void Execute()
         {
             GenericExecutor.ExecuteStandardTest(tester: _flyweightTester, patternName: PatternName);
         }
-
     }
 }

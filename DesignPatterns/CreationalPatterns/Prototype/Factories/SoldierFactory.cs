@@ -9,6 +9,7 @@ namespace DesignPatterns.CreationalPatterns.Prototype.Factories
         private static readonly IWeaponFactory WeaponFactory = new WeaponFactory();
         private static readonly Soldier RedTeamPrototype = new(10, null, EnumTeam.Red, EnumSoldierType.PistolUser, null);
         private static readonly Soldier BlueTeamPrototype = new(10, null, EnumTeam.Blue, EnumSoldierType.PistolUser, null);
+
         //private static readonly Soldier Soldier = new (1, null, EnumTeam.Unknown, EnumSoldierType.PistolUser, null);
         public Soldier CreateBlueTeamMedic(string name)
         {

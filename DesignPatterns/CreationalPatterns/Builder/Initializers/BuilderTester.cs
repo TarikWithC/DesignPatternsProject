@@ -1,5 +1,4 @@
-﻿
-using Core.Helpers;
+﻿using Core.Helpers;
 using Core.Interfaces;
 using DesignPatterns.CreationalPatterns.Builder.Abstractions;
 using DesignPatterns.CreationalPatterns.Builder.Concretes;
