@@ -4,12 +4,12 @@ namespace DesignPatterns.StructuralPatterns.Flyweight.Concretes
 {
     internal class Car
     {
-        //Instinct
+        //Intrinsic props
         public string? Owner { get; set; }
 
         public string? PlateNumber { get; set; }
 
-        //Distinct
+        //Extrinsic props
         public string Color { get; set; }
 
         public string Company { get; set; }
