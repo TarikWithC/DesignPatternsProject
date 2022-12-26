@@ -2,7 +2,7 @@
 
 namespace DesignPatterns.StructuralPatterns.Flyweight.Concretes
 {
-    internal class Car : ICar
+    internal class Car
     {
         //Instinct
         public string? Owner { get; set; }
