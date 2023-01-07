@@ -13,7 +13,7 @@ namespace DesignPatterns.CreationalPatterns.Prototype.Concretes
             WeaponType = weaponType;
             Caliber = caliber;
             AmmoCapacity = ammoCapacity;
-            Console.WriteLine("Weapon constructor call.");
+            Console.WriteLine("Weapon constructor called.");
         }
 
         public void PrintInfo()

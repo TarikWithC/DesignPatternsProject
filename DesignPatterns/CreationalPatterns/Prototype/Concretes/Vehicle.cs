@@ -13,7 +13,7 @@ namespace DesignPatterns.CreationalPatterns.Prototype.Concretes
             Id = id;
             Team = team;
             VehicleType = vehicleType;
-            Console.WriteLine("Vehicle constructor call.");
+            Console.WriteLine("Vehicle constructor called.");
         }
 
         public void PrintInfo()
