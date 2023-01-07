@@ -17,7 +17,7 @@ namespace DesignPatterns.CreationalPatterns.Prototype.Concretes
             Team = team;
             Type = type;
             Weapon = weapon;
-            Console.WriteLine("Soldier constructor call.");
+            Console.WriteLine("Soldier constructor called.");
         }
 
         public void PrintInfo()
